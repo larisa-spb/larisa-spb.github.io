@@ -1,0 +1,343 @@
+@media (max-width: 1400px) {
+	.tour__img img {
+		height: 300px;
+	}
+}
+
+@media (max-width: 1120px) {
+	/* Header */
+	.header__nav {
+		display: flex;
+		flex-direction: column;
+		margin-right: 20px;
+	}
+
+	.header__link {
+		margin-left: 0;
+	}
+
+	/* Tours in Russia */
+	.tour__title {
+		min-height: 70px;
+	}
+
+	.tour__img img {
+		height: 240px;
+	}
+
+	/* About company */
+	.about__item {
+		width: 50%;
+	}
+
+	.about__img {
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 935px) {
+	/* video */
+	.video {
+		min-height: 40vh;
+	}
+
+	/* tour */
+	.tour__content {
+		padding: 50px 0 25px;
+	}
+
+	/* news */
+	.news__inner {
+		padding: 25px 0;
+	}
+
+	/* about company */
+	.about__inner {
+		flex-direction: column-reverse;
+	}
+
+	.about__content {
+		padding: 25px 0;
+	}
+
+	.about__name {
+		margin-top: 20px;
+	}
+
+	.about__item {
+		width: 100%;
+	}
+
+	.about__img {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	/* contacts */
+	.contacts__container {
+		padding: 25px 0;
+	}
+	
+	/* footer */
+	.footer__phone {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.footer__number {
+		font-size: 18px;
+	}
+	.footer__number:last-child {
+		margin-left: 0;
+	}
+
+	.footer_text {
+		margin-bottom: 10px;
+	}
+	
+}
+
+/* Планшеты (портретная ориентация) */
+@media (max-width: 768px) {
+	/* header */
+	.header__nav {
+		display: none;
+	}
+
+	.logo {
+		width: 140px;
+	}
+
+	.title {
+		margin-bottom: 20px;
+	}
+	
+	/* video */
+	.video {
+		min-height: 32vh;
+	}
+	
+	/* tour */
+	.tour__item {
+		width: 100%;
+	}
+	
+	.tour__title {
+		min-height: auto;
+	}
+
+	/* news */
+	.news__item {
+		width: 100%;
+	}
+
+	.news__title {
+		min-height: auto;
+	}
+
+	.tour__img img {
+		height: 500px;
+	}
+
+	.contacts__item {
+		text-align: center;
+	}	
+
+	.about__img {
+		width: 100%;
+	}
+
+	.contacts__social {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.social__box {
+		margin-top: 10px;
+	}
+	.social__link:first-child {
+		margin-left: 0;
+	}
+
+	/* footer */
+	.footer__container {
+		padding-top: 0px;
+	}
+	.footer__logo {
+		margin-bottom: 15px;
+	}
+
+	.footer__content {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		margin-top: 15px;
+	}
+	
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.footer_text {
+		margin-bottom: 0;
+	}
+
+	.footer__phone {
+		display: flex;
+	}
+
+	.footer__number {
+		font-size: 18px;
+		margin-left: 20px;
+	}
+
+	.footer__number:first-child {
+		margin-left: 0;
+	}
+}
+
+/* Небольшие планшеты */
+@media (max-width: 600px) {
+	/* header */
+	.header__nav {
+		display: none;
+	}
+
+	.header__contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__phone {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+	}
+
+	.social__box {
+		display: inline-block;
+		text-align: right;
+	}
+
+	.header__tel:last-child {
+		margin-left: 0;
+	}
+
+	.logo {
+		width: 128px;
+	
+	}
+
+	/* video */
+	.video {
+		min-height: 26vh;
+	}
+
+	/* contacts */
+	.contacts__inner {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.tour__img img {
+		height: 360px;
+	}
+
+	/* news */
+	.news__item {
+		width: 100%;
+	}
+
+	.news__title {
+		min-height: auto;
+	}
+
+	/* about company */
+	.about__inner {
+		flex-direction: column-reverse;
+	}
+
+	.about__img {
+		margin-left: 0;
+	}
+}
+
+/* Мобильные устройства (альбомная ориентация) */
+@media (max-width: 480px) {
+	.popup {
+		width: 270px;
+	}
+
+	.popup__title {
+		font-size: 20px;
+	}
+
+	.popup__name,
+	.popup__country,
+	.popup__mail,
+	.popup__message {
+		font-size: 16px;
+	}
+
+	.popup__name input,
+	.popup__country input,
+	.popup__mail input,
+	.popup__message textarea {
+		width: 170px;
+	}
+
+	.popup__message textarea {
+		height: 110px;
+	}
+
+	/* header */ 
+	.header__inner img {
+		width: 100%;
+	}
+
+	.header__logo {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 145px;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.social__box {
+		display: flex;
+	}
+	.logo {
+		width: 140px;
+	}
+	
+	/* video */
+	.video {
+		min-height: 170px;
+	}
+
+	.tour__img img {
+		height: 235px;
+	}
+
+	/* contacts */
+	.contacts__item {
+		width: 100%;
+	}
+
+	/* footer */
+	.footer__number {
+		font-size: 18px;
+	}
+}
