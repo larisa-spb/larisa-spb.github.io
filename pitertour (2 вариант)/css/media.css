@@ -1,0 +1,623 @@
+/* Планшеты (альбомная ориентация) / Нетбуки */
+@media (max-width: 2024px) {
+  
+	/* Шапка 
+	==================================== */
+ 
+	
+}
+
+
+@media (max-width: 1024px) {
+	.about-us__img {
+		margin-right: 0;
+	}
+	
+	.about-us__inner {
+		display: block;
+	}
+	
+	.about-us__img {
+		width: 50%;
+		float: left;
+		margin-right: 10px;
+	}
+	
+	.about-us__text {
+		width: 100%;
+	}
+	
+}
+
+
+@media (max-width: 935px) {
+	.footer__content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+	}
+	
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.footer__number {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+/* Планшеты (портретная ориентация) */
+@media (max-width: 768px) {
+  
+   /* Шапка 
+	==================================== */
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+   }
+  
+  .header__nav {
+    display: none;
+   }
+  
+   /* Фоновое изображение 
+	==================================== */
+  .intro__title {
+    font-size: 50px;
+   }
+  
+  .intro__suptitle {
+    font-size: 22px;
+   }
+	
+	/* Стоимость горных прогулок 
+	==================================== */
+	.cost__box {
+		margin-left: 15px;
+	}
+	
+	.cost__img {
+		width: 50%;
+	}
+	
+	.cost__btn {
+		text-align: center;
+	}
+	
+	.cost__item {
+		/*box-shadow: 0 0 5px rgba(0,0,0,0.9);*/
+		border: 1px solid #e0e0e0;
+		padding: 15px;
+		margin: 0 0 50px;
+	}
+	
+	.request__content {
+		padding: 0 10px;
+	}
+	
+	/* Горный туризм
+	==================================== */
+	.tourism__img img {
+		max-width: 100%;
+	}
+	
+	/* Отзывы 
+	==================================== */
+  .review__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+   }
+	
+  .review__item {
+    width: 92%;
+    margin-right: 0;
+    margin: 20px auto 0;
+   }
+
+	.review__item:last-child {
+   	margin-right: 5px;
+	}
+	
+	.about-us__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	
+	.about-us__img {
+		margin-right: 0;
+		width: 100%;
+	}
+	
+	.about-us__text {
+		width: 100%;
+	}
+	
+	.questions__input:first-child {
+		margin-right: 20px;
+	}
+	
+	.questions__input {
+		margin-left: 0;
+	}
+	
+	.questions__btn {
+		font-size: 20px;
+		padding: 10px 38px;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		margin-bottom: 20px;
+	}
+	
+	.questions__info {
+		padding: 10px;
+	}
+	
+	.contacts__item {
+		text-align: center;
+	}
+
+	.footer__content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+	}
+	
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.footer__number {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.map__container.padding {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+}
+
+
+/* Небольшие планшеты */
+@media (max-width: 600px) {
+	
+   .padding {
+		padding: 20px 10px;
+   }
+	
+   /* Шапка 
+	==================================== */
+	.header__inner {
+   	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex;
+   	-webkit-box-pack: justify;
+   	    -ms-flex-pack: justify;
+   	        justify-content: space-between;
+   	margin-right: 10px;
+   }
+  
+   .header__contact {
+   	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex;
+   	-webkit-box-orient: vertical;
+   	-webkit-box-direction: normal;
+   	    -ms-flex-direction: column;
+   	        flex-direction: column;
+   }
+  
+   .header__phone {
+   	text-align: center;
+   	margin: 0 0 10px;
+   	font-size: 17px;
+   }
+	
+   .intro__content {
+   	padding: 0 10px;
+	}
+	
+   /* Фоновое изображение 
+	==================================== */
+   .intro {
+    height: 500px;
+   }
+	
+   .intro__title {
+   	font-size: 35px;
+   }
+  
+   .intro__suptitle {
+   	font-size: 23px;
+   }
+  
+   .intro__button {
+   	font-size: 20px;
+   	padding: 15px 80px;
+   }
+
+	/* Туры в горы 
+	==================================== */
+   .tour__col {
+   	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex;
+   	-webkit-box-orient: vertical;
+   	-webkit-box-direction: normal;
+   	    -ms-flex-direction: column;
+   	        flex-direction: column;
+   	-webkit-box-align: center;
+   	    -ms-flex-align: center;
+   	        align-items: center;
+
+   }
+	
+   .tour__inner {
+   	width: 100%;
+   	text-align: center;
+   	margin: 0 0 25px;
+   }
+	
+   .tour__img img {
+   	width: 100%;
+   }
+	
+	/* Стоимость горных прогулок 
+	==================================== */
+   .cost__item {
+   	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex;
+   	-webkit-box-orient: vertical;
+   	-webkit-box-direction: normal;
+   	    -ms-flex-direction: column;
+   	        flex-direction: column;
+   	border: none;
+   	margin: 0 0 20px;
+   	padding: 0;
+   }
+
+   .cost__img {
+   	width: 100%;
+   }
+
+   .cost__box {
+   	width: 100%;
+   	margin-left: 0;
+   	margin: 15px 0;
+   }
+	
+   .cost__btn {
+   	text-align: center;
+   }
+
+   .cost__value {
+   	font-size: 20px;
+   }
+	
+	/* Горный туризм 
+	==================================== */
+   .tourism__img {
+   	text-align: center;
+   }
+
+   .tourism__img img {
+   	width: 100%;
+   }
+	
+	/* Отзывы 
+	==================================== */
+
+   .review__inner {
+   	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex;
+   	-webkit-box-orient: vertical;
+   	-webkit-box-direction: normal;
+   	    -ms-flex-direction: column;
+   	        flex-direction: column;
+   }
+	
+   .review__item {
+   	width: 87%;
+   	margin-right: 0;
+   	margin: 20px auto 0;
+   }
+
+	.about-us__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	
+	.about-us__img {
+		margin-right: 0;
+	}
+	
+	.about-us__text {
+		width: 100%;
+	}
+	
+	.questions__input:first-child {
+		margin-right: 20px;
+	}
+	
+	.questions__input {
+		margin-left: 0;
+	}
+	
+	.questions__btn {
+		font-size: 20px;
+		padding: 10px 38px;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		margin-bottom: 20px;
+	}
+	
+	.questions__info {
+		padding: 10px;
+	}
+	
+	.contacts__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+
+	}
+	
+	.contacts__item {
+		width: 100%;
+	}
+
+	.footer__content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+	}
+	
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.footer__number {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+/* Мобильные устройства (альбомная ориентация) */
+@media (max-width: 480px) {
+	
+   .padding {
+   	padding: 20px 10px;
+   }
+
+   /* Шапка */
+   .header__inner img {
+   	width: 40%;
+   }
+
+   .header__button {
+   	display: none;
+   }
+
+   .header__inner {
+   	margin-right: 0px;
+   }
+
+   .header__phone {
+   	margin-bottom: 0;
+   }
+
+   .header__menu {
+   	margin-right: 10px;
+   }
+  
+	/* Фоновое изображение 
+	==================================== */
+   .intro__title {
+   	font-size: 24px;
+   	margin-bottom: 20px;
+   }
+
+   .intro__suptitle {
+   	font-size: 17px;
+   }
+
+   .intro__button {
+   	font-size: 20px;
+   	padding: 10px 48px;
+   }
+
+   .intro__content p {
+   	font-size: 14px;
+   }
+  
+	/*  Туры в горы 
+	==================================== */
+   .tour__inner {
+   	width: 100%;
+   }
+	
+	/*  Оставить заявку
+	==================================== */
+	.request {
+		display: none;
+	}
+    
+	.cost__button {
+		font-size: 20px;
+		padding: 10px 42px;
+	}
+	
+   /* Галерея 
+	==================================== */
+	.gallery__inner:nth-child(1) {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+	}
+	
+	
+	.cost__item {
+		margin: 0 0 25px;
+		padding: 0;
+	}
+	
+	.about-us__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	
+	.about-us__img {
+		margin-right: 0;
+	}
+	
+	.about-us__text {
+		width: 100%;
+	}
+	
+	.questions__input {
+		margin-left: 0;
+	}
+	
+	.questions__btn {
+		font-size: 20px;
+		padding: 10px 38px;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		margin-bottom: 10px;
+	}
+	
+	.questions__info {
+		padding: 10px;
+	}
+	
+	.questions__input:first-child {
+		margin-right: 0;	
+	}
+	
+	.contacts__inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	
+	.contacts__item {
+		width: 100%;
+	}
+	
+	.footer__content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+	}
+	
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.footer__number {
+		font-size: 20px;
+	}
+	
+}
+
+
+/* Мобильные устройства (портретная ориентация) */
+@media (max-width: 320px) {
+   .padding {
+   	padding: 20px 10px;
+   }
+	
+		/*  Оставить заявку
+	==================================== */
+	.request__button {
+		font-size: 20px;
+		padding: 10px 90px;
+	}
+  
+   /* Галерея 
+	==================================== */
+	.gallery__inner:nth-child(1) {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+	}
+	
+}

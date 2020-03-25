@@ -1,0 +1,11 @@
+@keyframes btn {
+	0% {
+		background-position: 80% 100%;
+	}
+	50% {
+		background-position: 150%;
+	}
+	100% {
+		background-position: 80% 100%;
+	}
+}

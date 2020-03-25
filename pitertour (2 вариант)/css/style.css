@@ -1,0 +1,597 @@
+:root {
+	--color_btn: #FFC046;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	box-sizing: border-box;
+}
+
+img {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*:after,
+*:before {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+
+.suptitle {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.btn {
+	color: #333;
+	text-decoration: none;
+	background: var(--color_btn);
+	border: 1px solid var(--color_btn);
+
+	width: 180px;
+}
+
+.btn:hover {
+	transform: translateY(2px);
+	transition: transform .2s linear;
+	cursor: pointer;
+}
+
+input, textarea {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+/* Modal window
+------------------------------ */
+
+.modalDialog__title {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.modalDialog {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	transition: opacity 400ms ease-in;
+}
+
+.modalDialog__box {
+	max-width: 350px;
+	position: relative;
+	margin: 10% auto;
+	padding: 30px;
+	background: #fff;
+}
+
+.modalDialog__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.close {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	right: 8px;
+	top: 8px;
+}
+
+
+.close:hover {
+	transform: rotate(180deg);
+	transition: all 600ms;
+}
+
+.modalDialog__form input[type="text"],
+.modalDialog__form input[type="email"],
+.modalDialog__form textarea{
+	padding: 5px;
+	font-size: 13px;
+	background-color: #f6f6f6;
+	border: none;
+}
+
+.modalDialog__form textarea {
+	resize: none;
+}
+
+.modalDialog__form label {
+	padding: 5px 0;
+}
+
+.modalDialog__form input[type="text"]:focus,
+.modalDialog__form input[type="email"]:focus{
+	border-bottom: none;
+}
+
+.modalDialog__btn {
+	border-radius: 1.5em;
+	padding: 10px;
+	font-size: 24px;
+	margin: 15px 0 0;
+
+	width: 100%;
+}
+
+.modalDialog__info {
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+
+/* Header
+------------------------------ */
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.header__logo {
+	text-align: center;
+}
+
+.header__text {
+	font-size: 14px;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: end;
+	margin-bottom: 14px;
+}
+
+.header__link {
+	font-size: 20px;
+	margin-left: 40px;
+	color: #333;
+	text-decoration: none;
+}
+
+.header__link:hover {
+	text-decoration: underline;
+}
+
+.header__link:first-child {
+	margin-left: 0;
+}
+
+.header__contact {
+	display: flex;
+	align-items: center;
+}
+
+.header__item {
+	margin-right: 30px;
+	text-align: center;
+}
+
+.header__phone {
+	font-size: 16px;
+	margin: 0 5px;
+}
+
+.header__button {
+	font-size: 14px;
+	padding: 9px 0;
+	max-width: 175px;
+	border-radius: 1.5em;
+}
+
+
+/* Intro
+------------------------------ */
+
+.intro {
+	background: url(../images/intro.jpg) no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-color: #93563C;
+
+	height: 600px;
+	background-attachment: fixed;
+	
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 0 0 0 300px rgba(0,0,0, .5) inset;
+}
+
+.intro__title,
+.intro__peterburg,
+.intro__moscow {
+	font-size: 70px;
+	color: #fff;
+	font-family: 'Neucha', cursive;
+	font-weight: 100;
+}
+
+.intro__content {
+	letter-spacing: 7px;
+}
+
+.intro__city {
+	display: flex;
+	justify-content: center;
+}
+
+.intro__peterburg {
+	margin-right: 100px;
+}
+
+/* Tours in Russia
+------------------------------ */
+.tour__content {
+	padding: 100px 0 50px;
+}
+
+.tour__title {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+
+.tour__item {
+	display: flex;
+	align-items: center;
+	margin: 25px 0;
+}
+
+.tour__img {
+	width: 45%;
+}
+
+.tour__img img {
+	border: 10px solid #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	
+	width: 100%;
+}
+
+.tour__box {
+	width: 55%;
+	margin-left: 40px;
+}
+
+.tour__name {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+.tour__paragraph {
+	font-size: 16px;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.tour__cost {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.tour__button {
+	font-size: 14px;
+	padding: 9px 0;
+	max-width: 175px;
+	border-radius: 1.5em;
+}
+
+/* Contact me
+------------------------------ */
+.request__content {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.request__text {
+	font-size: 16px;
+}
+.request__button {
+	width: 300px;
+	padding: 11px 0;
+	border-radius: 1.5em;
+
+	font-size: 20px;
+	margin: 30px 0;
+}
+
+/* News
+------------------------------ */
+.slider__item {
+	display: flex;
+	align-items: center;
+}
+
+.slider__item img {
+	width: 100px;
+}
+
+.slider-prev{
+	display: block;
+	background: url(../images/slider/back.png) no-repeat;
+	background-size: cover;
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width:30px;
+	height:30px;
+	
+	cursor:pointer;
+	
+
+}
+.slider-next{
+	display: block;
+	background: url(../images/slider/next.png) no-repeat;
+	background-size: cover;
+
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+
+	width:30px;
+	height:30px;
+
+	cursor:pointer;
+	
+}
+
+.slider {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.news__inner {
+	padding: 50px 0;
+}
+
+.news__box {
+	position: relative;
+}
+.news__content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.news__item {
+	display: flex;
+	
+	width: 100%;
+	align-items: stretch;
+}
+
+.news__img {
+	min-width: 80px;
+	height: 80px;
+
+	margin: 0 7px;
+}
+
+.news__img img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+
+.news__box {
+	margin: 0 7px;
+}
+
+.news__title {
+	font-size: 18px;
+}
+
+.news__text {
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e2e2;
+	font-size: 15px;
+	font-style: italic;
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+}
+
+.news__date {
+	padding: 10px 0;
+	font-size: 15px;
+	color: #707070;
+	font-style: italic;
+}
+
+
+/*  About company
+------------------------------ */
+.about__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about__content {
+	padding: 50px 0;
+}
+.about__title {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.about__suptitle {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 100;
+	margin-bottom: 40px;
+}
+.about__img {
+	margin-left: 20px;
+}
+
+.about__img img {
+	width: 100%;
+	padding: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+
+.about__text p {
+	padding: 10px 0;
+}
+.about__name {
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+.about__text p:first-child {
+	padding-top: 0;
+}
+
+/*  Services
+------------------------------ */
+.services__container {
+	padding: 50px 0;
+}
+
+.services__suptitle {
+	font-family: 'PT Sans', sans-serif;
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+/* Contacts
+------------------------------ */
+.contacts__container {
+	padding: 50px 0;
+}
+
+.contacts__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.contacts__title {
+	text-align: center;
+	font-size: 28px;
+
+	margin-bottom: 10px;
+}
+.contacts__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 30px 0;
+	width: 34%;
+}
+
+.contacts__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #f2f2f2;
+	border: 1px solid rgba(55,55,55,0.8);
+	box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.contacts__name {
+	padding: 20px 0 10px;
+	font-size: 17px;
+	font-weight: 700;
+	
+}
+
+.contacts__icon {
+	display: block;
+	height: 55px;
+	fill: var(--color_btn);
+}
+
+/* Map
+------------------------------ */
+.map__container {
+	padding: 50px 0;
+}
+
+/* Footer
+------------------------------ */
+.footer__container {
+	padding: 40px 10px 15px;
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_company {
+	display: block;
+	text-align: center;
+	
+}
+
+.footer__link {
+	text-decoration: none;
+	border-bottom: 1px dashed #333;
+	color: #333;
+}
+.footer__link:hover {
+	border-bottom: none;
+}
+
+.footer__number {
+	font-size: 20px;
+	text-align: center;
+}
