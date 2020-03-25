@@ -1,0 +1,414 @@
+body {
+   box-sizing: border-box;
+    
+   font-size: 16px;
+   color: #5a5a5a;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   padding: 0;
+}
+
+/* container 
+================================ */
+
+.container {
+   width: 900px;
+   max-width: 900px;
+   width: 100%;
+   margin: 0 auto;  
+}
+
+/* hero 
+================================ */
+
+.hero {
+   background: url(../images/letusmake.jpg) no-repeat;
+   height: 100vh;
+   background-size: cover;
+}
+
+/* header 
+================================ */
+
+.header {
+   padding: 40px 0;
+   background: #fff;
+}
+
+.logo {
+   font-family: 'Gotham__Book';
+   font-size: 25px;
+   font-weight: 200;
+}
+
+.header__logo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav__link {
+   color: #a7a7a7;
+   font-family: 'Gotham__Medium';
+   font-weight: 100;
+    
+   text-transform: uppercase;
+   text-decoration: none;
+   margin-left: 94px;
+   transition: color .2s linear;
+}
+
+.nav__link:hover {
+   color: #4c4c4c;
+}
+
+.content {
+   margin-top: 300px;
+}
+
+.title__hero {
+   font-family: 'Gotham__Bold';
+   font-size: 50px;
+   line-height: 50px;
+   color: #303030;
+    
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.subtitle__hero {
+   font-family: 'Georgia__Italic';
+   font-style: italic;
+   color: #5a5a5a;
+   line-height: 30px;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.button__content {
+   margin-top: 200px;
+}
+
+.button {
+   background:url(../images/path.png) no-repeat;
+   width: 80px;
+   height: 80px;
+     
+   margin: 0 auto;
+}
+
+.button:hover {
+   cursor: pointer;
+}
+
+/* work 
+================================ */
+
+.work {
+   margin-top: 50px;
+}
+
+.work__text {
+   margin: 0 auto;
+   width: 100%;
+   width: 550px;    
+}
+
+.title__content {
+   font-family: 'Gotham__Bold';
+   font-size: 30px;
+   line-height: 25px;
+   color: #303030;
+        
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.title__content:after {
+   content: '';
+   width: 240px;
+   height: 3px;
+   background: #303030;
+   display: block;
+   margin: 30px auto;
+}
+
+.subtitle__content {
+   font-family: 'Proxima__Nova__Regular';
+   color: #5a5a5a;
+   line-height: 25px;
+   font-size: 16px;
+   text-align: center;
+     
+   font-weight: 500;
+}
+
+.work__tumbnails {
+   margin-bottom: 66px; 
+}
+
+.work__images {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.work__images img {
+   margin-top: 60px;
+}
+
+.filter:hover {
+   -webkit-filter: contrast(115%);
+   filter: contrast(115%);
+}
+
+/* team 
+================================ */
+
+.team {
+   background: #f3f3f3;
+}
+
+.team_text {
+   margin: 0 auto;
+   padding-top: 50px;
+   width: 100%;
+   width: 550px;
+}
+
+.team__members {
+   padding: 40px 0 80px 0;
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   background: #f3f3f3;
+}
+
+.team__teammate {
+   background: #FFF;
+   padding: 20px 35px 0 35px;
+   box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.team__name {
+   font-size: 16px;
+   font-family: 'Gotham__Bold';
+   color: #303030;
+   text-transform: uppercase;
+   line-height: 25px;
+}
+
+.team__status {
+   font-family: 'Georgia__Italic';
+   font-style: italic;
+   font-size: 12px;
+   line-height: 25px;
+   color: #303030;
+   font-weight: 500;
+}
+
+.team__social {
+   line-height:50px;
+}
+
+.social {
+   vertical-align:middle;
+   margin: 0 5px 0 5px;
+}
+
+/* contact 
+================================ */
+
+.contact {
+	margin-bottom: 72px;
+}
+.contact_text {
+   margin-top: 40px;
+}
+
+.title__contact {
+   font-family: 'Gotham__Bold';
+   font-size: 30px;
+   line-height: 25px;
+   color: #303030;
+        
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.title__contact:after {
+   content: '';
+   width: 180px;
+   height: 3px;
+   background: #303030;
+   display: block;
+   margin: 30px auto; 
+}
+
+
+.contact__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__send {
+	display: flex;
+	justify-content: space-between;
+}
+.contact__subtitle {
+	font-size: 16px;
+	color: #5a5a5a;
+	font-family: 'Proxima__Nova__Regular';
+	line-height: 20px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+textarea {
+	margin-bottom: 18px;
+}
+textarea,
+.email {
+	resize: none;
+	background: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+	color: #5f5f5f;
+	font-family: 'Georgia__Italic';
+	font-style: italic;
+	padding: 28px;
+	line-height: 20px;
+}
+
+.email {
+	width: 60%;
+	margin-right: 20px;
+}
+
+
+.btn {
+	width: 40%;
+
+	color: #fff;
+	font-family: 'Gotham__Bold';
+	font-size: 16px;
+	font-weight: 600;
+	border: 1px solid #6995a9;
+	background: #6995a9;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	transition: background .2s linear; 
+}
+.btn:hover {
+	background: #588da5;
+	cursor: pointer;
+	transition: background .2s linear; 
+}
+
+.btn:active  {
+	background: #4287a7;
+	transition: background .2s linear;
+}
+.btn img {
+	
+	margin-right: 15px;
+}
+
+
+.map img {
+	padding: 5px;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+/* footer 
+================================ */
+
+footer {
+	background: #4f4f4f;
+	padding: 36px 0;
+	font-size: 16px;
+	font-family: 'Proxima__Nova__Regular';
+	line-height: 25px;
+	
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__content span {
+	color: #949494;
+}
+
+.footer__content p {
+	color: #6e6e6e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
