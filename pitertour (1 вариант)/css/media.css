@@ -1,0 +1,313 @@
+@media (max-width: 935px) {
+
+	/* intro */
+	.intro {
+		background-position-x: center;
+		background-position-y: center;
+		background-attachment: initial;
+		background-size: 1160px;
+
+		height: 475px;		
+	}
+	
+	.intro__title {
+		font-size: 65px;
+		margin-bottom: 110px;
+	}
+	.intro__peterburg:active, 
+	.intro__moscow:active {
+		transform: scale(1.2);
+		transition: transform .2s linear;
+		cursor: pointer;
+	}
+
+	/* tour */
+	.tour__content {
+		padding: 50px 0 25px;
+	}
+
+	/* news */
+	.news__inner {
+		padding: 25px 0;
+	}
+
+	/* about company */
+	.about__inner {
+		flex-direction: column-reverse;
+	}
+
+	.about__content {
+		padding: 25px 0;
+	}
+
+	.about__name {
+		margin-top: 20px;
+	}
+	.about__item {
+		width: 100%;
+	}
+
+	.about__img {
+		margin-left: 0;
+		width: 70%;
+	}
+
+	/* contacts */
+	.contacts__container {
+		padding: 25px 0;
+	}
+	
+	/* footer */
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.footer__number {
+		font-size: 20px;
+	}
+	.footer_text {
+		margin-bottom: 10px;
+	}
+	
+}
+
+/* Планшеты (портретная ориентация) */
+@media (max-width: 768px) {
+	/* header */
+	.logo {
+		width: 140px;
+	}
+
+	.title {
+		margin-bottom: 20px;
+	}
+	
+	/* intro */
+
+	.intro {
+		background-position-x: center;
+		background-position-y: center;
+		background-attachment: initial;
+		background-size: 880px;
+
+		height: 320px;
+	}
+	
+	.intro__title {
+		font-size: 46px;
+		letter-spacing: 14px;
+	}
+
+	.intro__peterburg,
+	.intro__moscow {
+		font-size: 25px;
+	}
+
+	.intro__peterburg:hover, 
+	.intro__moscow:hover {
+		transform: scale(1.1);
+	}
+
+	.intro__peterburg:active, 
+	.intro__moscow:active {
+		transform: scale(1.1);
+	}
+
+	/* tour */
+	.tour__item {
+		width: 48%;
+	}
+
+	/* news */
+	.news__item {
+		width: 48%;
+	}
+
+	.contacts__item {
+		text-align: center;
+	}	
+	.about__img {
+		width: 100%;
+	}
+
+	/* footer */
+	.footer__container {
+		padding-top: 0px;
+	}
+	.footer__logo {
+		margin-bottom: 15px;
+	}
+
+	.footer__content {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.footer_company {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.footer_text {
+		margin-bottom: 0;
+	}
+
+	.footer__phone {
+		display: flex;
+	}
+
+	.footer__number {
+		font-size: 17px;
+		margin-left: 20px;
+	}
+
+	.footer__number:first-child {
+		margin-left: 0;
+	}
+}
+
+
+/* Небольшие планшеты */
+@media (max-width: 600px) {
+	/* header */
+	.header__nav {
+		display: none;
+	}
+	.header__contact {
+		display: flex;
+		flex-direction: column;
+	}
+	.header__phone {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+	}
+	.social__box {
+		display: inline-block;
+		text-align: right;
+	}
+	.header__tel:last-child {
+		margin-left: 0;
+	}
+	.logo {
+		width: 128px;
+	
+	}
+
+	/* intro */
+	.intro {
+		background-position-x: center;
+		background-position-y: top;
+		background-attachment: initial;
+		background-size: 775px;
+
+		height: 310px;		
+	}
+
+	.intro__title {
+		font-size: 38px;
+		letter-spacing: 11px;
+	}
+	.intro__peterburg,
+	.intro__moscow {
+		font-size: 26px;
+	}
+
+	/* contacts */
+	.contacts__inner {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	/* tour */
+	.tour__item {
+		width: 100%;
+	}
+	
+	.tour__img img {
+		height: 300px;
+	}
+
+	/* news */
+	.news__item {
+		width: 100%;
+	}
+
+	/* about company */
+	.about__inner {
+		flex-direction: column-reverse;
+	}
+
+	.about__img {
+		margin-left: 0;
+	}
+}
+
+
+/* Мобильные устройства (альбомная ориентация) */
+@media (max-width: 480px) {
+	/* header */ 
+	.header__inner img {
+		width: 100%;
+	}
+
+	.header__logo {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 145px;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.social__box {
+		display: flex;
+	}
+	.logo {
+		width: 140px;
+	}
+	/* intro */
+	.intro {
+		background-position-x: center;
+		background-position-y: center;
+		background-attachment: initial;
+		background-size: 690px;
+
+		height: 255px;
+	}
+
+	.intro__title {
+		font-size: 33px;
+		margin-bottom: 60px;
+		letter-spacing: 4px;
+	}
+
+	.intro__peterburg {
+		margin-bottom: 15px;
+	}
+
+	.intro__city {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.intro__peterburg, 
+	.intro__moscow {
+		font-size: 20px;
+	}
+
+	/* contacts */
+	.contacts__item {
+		width: 100%;
+	}
+
+	/* footer */
+	.footer__number {
+		font-size: 15px;
+	}
+}
