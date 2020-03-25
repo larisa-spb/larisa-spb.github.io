@@ -1,0 +1,602 @@
+*{padding:0; margin: 0}
+
+/*-------------------------------------------*/
+/*------------------ FONTS ------------------*/
+/*-------------------------------------------*/
+
+.header_logo {
+	font-family: "fivosans-heavy";	
+}
+
+.header_menu nav a span,
+.header_text h1,
+.about-us_text h1,
+.about-us_block_container h1,
+.contact_block_text_container_min h3,
+.contact_block_text h1,
+.contact_block_text_container_min h3,
+.information_title,
+.pricing_yoga,
+.pricing_yoga2 {
+	font-family: "fivosans-bold";
+}
+
+.header_menu nav a, 
+.header_menu button,
+.header_text h3,
+.pricing_view ul li,
+.cd-currency,
+.cd-value,
+.cd-duration {
+	font-family: "fivosans-regular";
+}
+
+.button {
+    font-family: "fivosans-medium";
+}
+
+.header_text h3,
+.about-us_text h3,
+.about-us_block_container h3,
+.contact_block_text_container_min p,
+.information_info,
+.information_info_ways {
+	font-family: "fivosans-light";
+}
+
+.information_author,
+.information_ready,
+.cd-name {
+    font-family: "fivosans-oblique";
+}
+
+/*--------------------------------------------*/
+/*------------------ HEADER ------------------*/
+/*--------------------------------------------*/
+
+.header{
+	background: url(../image/vector_smart_object.png);
+	max-width: 100%;
+	position: relative;
+	background-size: cover;
+	height: 1350px;
+}
+
+.header_content{
+	margin: 0 auto;
+	position: relative;
+	padding-top: 70px;
+	display: flex;
+	align-items: center;
+	max-width: 1500px;
+}
+
+.header_logo{
+	color: #ff6a6d;
+	font-size: 32px;
+}
+
+.header_menu{
+	margin-left: 550px;
+}
+
+.header_menu nav a span{
+	color: #ff6a6d;
+}
+
+.header_menu nav a, 
+.header_menu button,
+.header_text h3 {
+	font-size: 18px;
+}
+
+.header_menu nav > a{
+	text-decoration: none;
+	margin: 0 25px;
+	color: #abacba;
+}
+
+.header_menu button {
+	margin-left: 50px;
+	padding: 8px 50px;
+	border-radius: 20px;
+	background: none;
+	color: #ff6a6d;
+	border: 2px solid #ff6a6d;
+}
+
+.header_menu button:hover {
+	padding: 10px 52px;
+}
+
+.header_menu button:hover,
+.header_text button:hover {
+	background: #ff6a6d;
+	color: #FFF;
+	border: none;
+	box-shadow: -5px 5px 15px rgba(0,0,0,0.4);
+	-webkit-box-shadow: -5px 5px 15px rgba(0,0,0,0.4);
+	-moz-box-shadow: -5px 5px 15px rgba(0,0,0,0.4);
+	cursor: pointer;
+	
+}
+
+.header_text {
+	position: absolute;
+	max-width: 565px;
+	top: 290px;
+	left: 240px;
+}
+
+.header_text h1,
+.about-us_text h1{
+	font-size: 50px;
+	color: #3b3838;
+}
+.header_text h1 {
+	margin-bottom: 40px;
+}
+
+.header_text h3 {
+	max-width: 475px;
+}
+
+.header_text h3,
+.about-us_text h3 {
+	color: #abacac;
+	font-weight: 200;
+	line-height: 2.5em;
+	font-size: 18px;
+}
+
+.header_text button {
+	margin-top: 30px;
+	padding: 20px 70px;
+	border-radius: 60px;
+	font-size: 20px;
+	margin-right: 25px;
+	background: none;
+	border: 2px solid #ff6a6d;
+	color: #ff6a6d;
+}
+
+.header_text button:hover {	
+	padding: 22px 72px;
+}
+
+/*--------------------------------------------*/
+/*----------------- ABOUT US -----------------*/
+/*--------------------------------------------*/
+
+.about-us_content,
+.about-us_block,
+.contact_block,
+.pricing_container
+{
+	max-width: 1500px;	
+	margin: 0 auto;
+}
+
+
+.about-us_text h1 {
+	margin-bottom: 20px;
+}
+
+.about-us_text {
+	text-align: center;
+}
+
+.about-us_block {
+	margin-top: 100px;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin-bottom: 200px;
+}
+
+.about-us_block h1 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.about-us_block_container {
+	max-width: 265px;	
+}
+
+.about-us_block_container h1 {
+	font-size: 24px;
+	color: #3b3838;
+
+}
+
+.about-us_block_container h3 {
+	color: #abacac;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+/*---------------------------------------------*/
+/*------------------ CONTACT ------------------*/
+/*---------------------------------------------*/
+.contact{
+	background: url(../image/contact.png) no-repeat;
+	width: 100%;
+	min-height: 900px;
+}
+
+
+.contact_block_text {
+	position: absolute;
+	max-width: 550px;
+	margin-left: 800px;
+	margin-top: 150px;
+}
+.contact_block_text_container_min h3 {
+	color: #3b3838;
+	font-size: 24px;
+}
+
+.contact_block_text h1 {
+	text-align: center;
+	font-size: 50px;
+	color: #3b3838;
+}
+
+.contact_block_text_container {
+	max-width: 480px;
+	margin-top: 50px;
+}
+
+.contact_block_text_container_min .block_icon {
+	display: table-cell;
+	vertical-align: top;
+	padding: 0 20px 0 50px;
+}
+
+.contact_block_text_container_min .block_icon i:before {
+	content: url(../image/ceklist.png);
+}
+.contact_block_text_container_min {
+	display: table;
+	padding: 20px 0;
+}
+
+.contact_block_text_container_min h3 {
+	font-size: 24px;
+	color: #656565;
+}
+
+.contact_block_text_container_min p {
+	font-size: 15px;
+	color: #abacac;
+	font-weight: 200;
+	line-height: 1.8em;
+}
+
+/*---------------------------------------------*/
+/*---------------- INFORMATION ----------------*/
+/*---------------------------------------------*/
+
+.information {
+	background: url(../image/vector_smart_object_copy.png) no-repeat;
+	width: 100%;
+	height: 2000px;
+    position: relative;
+}
+.information_text {
+    position: absolute;
+    width: 600px;
+    top: 150px;
+    left: 300px;
+}
+.information_author {
+    color: #000;
+    opacity: 0.51;
+    font-size: 20px;
+    font-style: italic;
+    padding: 5px 0;
+}
+.information_title {
+    color: #3b3838;
+    font-size: 50px;
+    line-height: 60.39px;
+    
+}
+.information_info,
+.information_info_ways {
+    color: #000;
+    font-size: 18px;
+    line-height: 40px;
+    opacity: 0.65;
+    margin: 0 auto;
+
+}
+
+.information_info {
+    width: 400px;
+    padding-top: 60px;
+}
+.information_info_ways {
+    width: 500px;
+    text-indent: 40px;
+    padding-top: 60px;
+
+}
+
+.information_ready {
+    color: #3cbef1;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.information_text_ways {
+    position: absolute;
+    width: 800px;
+    top: 920px;
+    left: 870px;
+
+}
+
+/*---------------------------------------------*/
+/*------------------ PRICING ------------------*/
+/*---------------------------------------------*/
+
+.pricing {
+    background: url(../image/vector_smart_object_footer.png) no-repeat;
+	width: 100%;
+	height: 1580px;
+    position: relative;
+}
+
+.pricing_container {
+    max-width: 1500px;	
+	margin: 0 auto;
+    top:60px;
+
+
+}
+.pricing_list,
+.pricing_list3 {
+    
+    background: #FFF;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 3px rgba(255,106,109,0.5);
+    top: 100px;
+    position: absolute;
+     
+}
+.pricing_list2 {
+    top: 50px;
+    left: 500px;
+   
+}
+.pricing_list3 {
+    left: 1200px;
+}
+
+.pricing_list2 {
+    background: #FFF;
+    width: 500px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow:  0 0 50px 5px rgba(255,106,109,0.3);
+    z-index: 1;
+     
+}
+
+.pricing_block .pricing_icon {
+	display: table-cell;
+	vertical-align: top;
+	padding: 0 20px 0 50px;
+}
+.pricing_block2 .pricing_icon2 {
+	display: table-cell;
+	vertical-align: top;
+	padding: 0 20px 0 50px;
+}
+
+
+.pricing_block .pricing_icon i:before {
+	content: url(../image/vector_smart_object8.png);
+}
+
+.pricing_block2 .pricing_icon2 i:before {
+	content: url(../image/vector_smart_object7.png);
+}
+.pricing_view {
+   margin-top: 60px;
+}
+.pricing_view2 {
+    margin-top: 60px;
+}
+
+.pricing_block {
+	display: table;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.pricing_block2 {
+	display: table;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    
+} 
+
+.pricing_block p {
+	font-size: 18px;
+	color: #3b3838;
+    opacity: 0.75;
+    margin-top: 8px;
+}
+.pricing_block2 p {
+	font-size: 18px;
+	color: #3b3838;
+    opacity: 0.75;
+    margin-top: 8px;
+}
+
+
+.pricing_rate {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cd-currency,
+.cd-value,
+.cd-duration,
+.cd-name {
+    color: #3b3838;
+    opacity: 0.75;
+}
+.cd-currency {
+    font-size: 48px;
+    vertical-align: top;
+    font-weight: 700;
+    
+}
+.cd-value {
+    font-size: 150px;
+}
+.cd-duration {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cd-name {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+}
+.button {
+    width: 500px;
+    text-align: center;  
+    
+}
+.cd-button,
+.cd-button2 {
+    font-size: 18px;
+    width: 265px;
+    color: #FFF;
+    padding: 32px 30px;
+    border-radius: 40px;
+    border: none;
+    margin: 40px 0;
+}
+.cd-button {
+    background: linear-gradient(to right, #5fcef5, #83e4fc);
+    box-shadow:  -5px 5px 10px 3px rgba(95,206,244,0.4);
+}
+.cd-button2 {
+    background: #e2585b;
+    box-shadow:  -5px 5px 10px 3px rgba(226,88,91,0.4);
+}
+
+.pricing_yoga {
+    text-align: center;
+    color: #494949;
+    font-size: 30px;
+    margin-bottom: 20px;
+    opacity: 0.80;
+}
+.pricing_yoga2 p{
+    background: #ff6a6d;
+    font-size: 30px;
+    border-radius: 15px 15px 0px 0px;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+/*--------------------------------------------*/
+/*------------------ FOTTER ------------------*/
+/*--------------------------------------------*/
+
+
+
+
+.footer {
+    background: #fff;
+    opacity: 0.50;
+    max-width: 1200px;	
+	margin: 0 auto;
+    border-radius: 150px 150px 0 0;
+    padding: 114px 170px 60px 170px;
+    margin-top: 210px;
+    z-index: 2;
+}
+
+.footer_container {
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.footer_list {
+    width: 200px;
+ 
+}
+.footer_list h3{
+  
+    padding-bottom: 43px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    font-weight: 100;
+    font-family: "fivosans-regular";
+}
+.footer_version {
+    text-align: center;
+}
+
+.footer_list p {
+    color: #2e2e2e;
+    padding-bottom: 23px;
+    font-size: 16px;
+    font-family: "fivosans-regular";
+    line-height: 30px;
+}
+
+.footer_list ul li {
+    color: #2e2e2e;
+    list-style:none;
+    padding: 15px 0;
+    font-size: 16px;
+    font-family: "fivosans-regular";
+}
+.footer_list ul li a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.footer_version p {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-family: "fivosans-regular";
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
