@@ -990,6 +990,7 @@ input {
 	.intro {
 		justify-content: flex-start;
 		margin-top: 50px;
+		height: 850px;
 	}
 
 	.intro__inner {
