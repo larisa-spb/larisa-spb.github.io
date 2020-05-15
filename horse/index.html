@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/libs/slick.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
+    <title>Конный клуб Horse</title>
+</head>
+<body>
+
+<!-- Sprite -->    
+<svg style="display: none;">
+
+    <symbol id="twitter"  viewBox="0 0 19 16">
+        <g>
+            <path d="M17.0466 4.02602L17.0902 4.55494C17.043 7.39716 16.024 10.1301 14.2139 12.2686C12.7998 13.8678 10.9785 15.0222 8.95919 15.5992C6.93985 16.1763 4.8042 16.1526 2.79726 15.531C1.81462 15.2197 0.876283 14.7748 0.00683594 14.208C0.319458 14.2371 0.632065 14.2517 0.944688 14.2517C1.82852 14.2558 2.70678 14.1066 3.54292 13.8102C4.35001 13.5266 5.10059 13.0936 5.75808 12.5324C4.94535 12.5127 4.15902 12.23 3.50959 11.724C2.86017 11.218 2.38031 10.5142 2.13747 9.7115C2.37427 9.77196 2.61742 9.80181 2.86133 9.80035C3.20633 9.80381 3.55021 9.75922 3.88371 9.66777C3.00689 9.48266 2.2176 8.99296 1.64675 8.2799C1.06425 7.55786 0.754295 6.64192 0.77429 5.70162V5.6579C1.31158 5.95879 1.90982 6.12452 2.52053 6.14168C2.00388 5.78274 1.57988 5.29853 1.28548 4.73124C0.970627 4.11923 0.809505 3.43515 0.81689 2.74188C0.824274 2.0486 0.999934 1.36837 1.32775 0.763682C2.28572 1.99259 3.48315 2.99892 4.84203 3.71714C6.25314 4.46159 7.7976 4.89662 9.3787 4.99499C9.29326 4.69458 9.25052 4.38289 9.2519 4.06975C9.25137 3.53744 9.35266 3.01029 9.54988 2.51865C9.74711 2.02701 10.0364 1.58061 10.4011 1.20515C10.7575 0.830896 11.1818 0.533099 11.6496 0.328825C12.1175 0.124551 12.6197 0.0178158 13.1274 0.0147392C13.6695 0.00821103 14.207 0.118447 14.7057 0.33844C15.2044 0.558432 15.6534 0.883369 16.0242 1.2926C16.896 1.12002 17.7322 0.792158 18.4956 0.323625C18.207 1.26007 17.6021 2.05767 16.7917 2.57045C17.5555 2.45416 18.3006 2.23165 19.0068 1.90896C18.4742 2.72415 17.8113 3.43958 17.0466 4.02461V4.02602Z"/>
+        </g>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 8 16">
+        <g>
+            <path d="M5.61574 0.0162277C4.76161 0.0130028 3.94113 0.350608 3.33462 0.954859C2.73869 1.5522 2.40274 2.36254 2.4004 3.2083V6.40157H0.00805664V9.63089H2.4004V16.0162H5.61574V9.63089H8.00808V6.40157H5.61574V4.41013C5.61106 4.12961 5.67515 3.85225 5.80234 3.6025C5.85818 3.48922 5.94299 3.3929 6.04809 3.32342C6.15319 3.25394 6.2748 3.21379 6.40043 3.20709H8.00808V0.0162277H5.61574Z">
+        </g>
+    </symbol>
+
+    <symbol id="pinterest" viewBox="0 0 13 16">
+        <g>
+            <path d="M11.7066 10.7453C12.6425 9.45756 13.0993 7.85138 12.9903 6.23119C12.8813 4.611 12.2142 3.08938 11.1153 1.95468C9.8692 0.710138 8.2202 0.0168152 6.5063 0.0168152C4.7924 0.0168152 3.1434 0.710138 1.89729 1.95468C0.904633 2.96024 0.260104 4.28933 0.0671574 5.7287C-0.12579 7.16806 0.144037 8.63425 0.833299 9.89201C0.910437 10.0469 1.02161 10.1798 1.15751 10.2797C1.2934 10.3796 1.45002 10.4435 1.61414 10.466C1.77825 10.4884 1.94508 10.4689 2.10054 10.4089C2.25601 10.3489 2.39558 10.2503 2.50747 10.1213C2.60407 10.0209 2.6802 9.90055 2.73115 9.76778C2.7821 9.635 2.80678 9.4926 2.80371 9.34935C2.80183 9.14865 2.76153 8.95044 2.68521 8.76668C2.29979 8.13272 2.09459 7.39505 2.09397 6.64135C2.09345 6.05536 2.20687 5.47552 2.42721 4.93787C2.64756 4.40022 2.9701 3.91624 3.37479 3.51601C4.22489 2.68559 5.33962 2.22443 6.49684 2.22443C7.65405 2.22443 8.76878 2.68559 9.61888 3.51601C10.0282 3.91348 10.3551 4.39648 10.5788 4.93444C10.8025 5.47241 10.9183 6.05364 10.9186 6.64135C10.9532 7.55767 10.6967 8.45984 10.19 9.20401C9.88302 9.60835 9.48775 9.92774 9.03821 10.1347C8.58868 10.3416 8.09835 10.4299 7.60938 10.392C7.42056 10.4024 7.23177 10.3707 7.05526 10.2989C6.87876 10.2272 6.71849 10.1171 6.58478 9.97568C6.45108 9.83427 6.34693 9.66474 6.27912 9.47806C6.21131 9.29138 6.18135 9.09173 6.19113 8.89201C6.22512 8.36693 6.38054 7.8587 6.64372 7.41201C6.93911 6.85681 7.10789 6.23635 7.13663 5.60002C7.15101 5.37671 7.11574 5.15294 7.03364 4.94664C6.95155 4.74034 6.82491 4.55724 6.66388 4.41201C6.35424 4.1977 5.98996 4.08882 5.62005 4.10002C5.18096 4.11452 4.7643 4.30857 4.45772 4.64135C4.02724 5.18804 3.81516 5.89064 3.86647 6.60002C3.88315 7.00482 3.92272 7.40821 3.98497 7.80801L4.10346 8.26535L2.09397 14.64V14.8067C2.0943 15.127 2.21474 15.434 2.42887 15.6605C2.64299 15.8869 2.93332 16.0143 3.23614 16.0147C3.43561 16.0264 3.63411 15.9778 3.80845 15.8746C3.9828 15.7715 4.12577 15.6179 4.22069 15.432H4.26105L5.32504 11.64C5.61328 11.9651 5.96088 12.225 6.34679 12.404C6.73271 12.583 7.14893 12.6773 7.5703 12.6813C8.35288 12.7074 9.13099 12.5469 9.84698 12.2117C10.563 11.8766 11.1985 11.3755 11.7066 10.7453Z">
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 16 16">
+        <g>
+            <path d="M1.35847 1.36726C0.927142 1.7947 0.585395 2.30387 0.353221 2.86497C0.121048 3.42606 0.00310951 4.02782 0.00630405 4.63504V11.3954C0.00567152 12.0022 0.12478 12.6032 0.356743 13.164C0.588705 13.7248 0.92895 14.2344 1.3581 14.6635C1.78725 15.0926 2.29681 15.4329 2.85764 15.6648C3.41848 15.8968 4.01958 16.0158 4.62649 16.0152H11.3873C11.9941 16.0157 12.5951 15.8965 13.1558 15.6645C13.7165 15.4325 14.2259 15.0922 14.6549 14.6631C15.0839 14.234 15.4241 13.7245 15.656 13.1638C15.8879 12.603 16.007 12.0021 16.0063 11.3954V4.63504C16.0066 4.02842 15.8874 3.42769 15.6554 2.86719C15.4234 2.30669 15.0831 1.7974 14.6542 1.36846C14.2252 0.939517 13.7158 0.599321 13.1553 0.367325C12.5947 0.135328 11.994 0.0160805 11.3873 0.0163965H4.62649C4.01931 0.0130451 3.41753 0.130785 2.8564 0.362733C2.29526 0.594681 1.78605 0.936179 1.35847 1.36726ZM11.5375 1.5932C11.9176 1.59225 12.2941 1.66639 12.6454 1.81137C12.9966 1.95635 13.3158 2.16931 13.5845 2.43801C13.8532 2.70671 14.0662 3.02586 14.2112 3.37712C14.3562 3.72837 14.4303 4.10481 14.4294 4.48481V11.5456C14.4303 11.9256 14.3562 12.302 14.2112 12.6533C14.0662 13.0045 13.8532 13.3237 13.5845 13.5924C13.3158 13.8611 12.9966 14.074 12.6454 14.219C12.2941 14.364 11.9176 14.4381 11.5375 14.4372H4.47625C4.09612 14.4383 3.7195 14.3643 3.36808 14.2194C3.01666 14.0745 2.69741 13.8615 2.42856 13.5928C2.15972 13.3241 1.94663 13.0049 1.80156 12.6536C1.65649 12.3022 1.58229 11.9257 1.58324 11.5456V4.48481C1.58229 4.10471 1.65649 3.72817 1.80156 3.37684C1.94663 3.0255 2.15972 2.7063 2.42856 2.43758C2.69741 2.16887 3.01666 1.95594 3.36808 1.81103C3.7195 1.66612 4.09612 1.59209 4.47625 1.5932H11.5375ZM11.5183 3.11472C11.3827 3.25179 11.2907 3.42591 11.2539 3.61515C11.217 3.8044 11.237 4.00031 11.3113 4.17823C11.3856 4.35615 11.5108 4.50812 11.6713 4.61502C11.8317 4.72191 12.0202 4.77895 12.213 4.77895C12.4059 4.77895 12.5943 4.72191 12.7548 4.61502C12.9153 4.50812 13.0405 4.35615 13.1148 4.17823C13.189 4.00031 13.2091 3.8044 13.1722 3.61515C13.1354 3.42591 13.0434 3.25179 12.9078 3.11472C12.8219 3.01446 12.7153 2.93398 12.5954 2.8788C12.4755 2.82362 12.345 2.79505 12.213 2.79505C12.081 2.79505 11.9506 2.82362 11.8307 2.8788C11.7108 2.93398 11.6042 3.01446 11.5183 3.11472ZM5.17581 5.17947C4.52804 5.83465 4.12717 6.69396 4.04145 7.61127C3.95573 8.52858 4.1904 9.44726 4.70557 10.2111C5.22074 10.9749 5.98461 11.5368 6.86726 11.8011C7.74991 12.0654 8.69685 12.0158 9.54708 11.6608C10.3973 11.3058 11.0983 10.6673 11.5309 9.85389C11.9636 9.04045 12.1011 8.10229 11.92 7.19894C11.739 6.29559 11.2507 5.48282 10.538 4.89883C9.82539 4.31485 8.93246 3.9957 8.01108 3.99566C7.48362 3.99538 6.96137 4.09988 6.47464 4.3031C5.9879 4.50632 5.54645 4.80421 5.17581 5.17947ZM9.70099 6.32482C10.0273 6.6576 10.2481 7.07931 10.3356 7.53706C10.4232 7.9948 10.3735 8.4682 10.193 8.89787C10.0125 9.32755 9.70923 9.69437 9.32106 9.95233C8.9329 10.2103 8.47715 10.3479 8.01108 10.3479C7.54501 10.3479 7.08934 10.2103 6.70117 9.95233C6.31301 9.69437 6.00963 9.32755 5.82915 8.89787C5.64866 8.4682 5.59908 7.9948 5.68661 7.53706C5.77414 7.07931 5.99496 6.6576 6.32124 6.32482C6.54091 6.0998 6.80333 5.92098 7.09313 5.79889C7.38294 5.67681 7.69426 5.61391 8.00873 5.61391C8.32321 5.61391 8.63446 5.67681 8.92426 5.79889C9.21406 5.92098 9.47656 6.0998 9.69622 6.32482H9.70099Z">
+        </g>
+    </symbol>
+
+    <symbol id="arrow__prev" viewBox="0 0 16 28">
+        <g>
+            <path d="M0.758073 13.2316L13.7089 0.316634C14.1332 -0.106263 14.8202 -0.105552 15.2438 0.318821C15.6671 0.74314 15.666 1.4305 15.2416 1.85373L3.06166 14L15.2421 26.1463C15.6664 26.5696 15.6675 27.2565 15.2442 27.6809C15.0319 27.8936 14.7537 28 14.4755 28C14.198 28 13.9209 27.8943 13.7089 27.6831L0.758073 14.7684C0.553707 14.5651 0.439027 14.2884 0.439027 14C0.439026 13.7117 0.554035 13.4353 0.758073 13.2316Z">
+        </g>
+    </symbol>
+
+    <symbol id="arrow__next" viewBox="0 0 16 28">
+        <g>
+            <path d="M15.2419 14.7684L2.29111 27.6834C1.86679 28.1063 1.17981 28.1056 0.7562 27.6812C0.33292 27.2569 0.334014 26.5695 0.758388 26.1463L12.9383 14L0.757954 1.85369C0.333636 1.43041 0.332542 0.743482 0.755767 0.319109C0.968118 0.106375 1.24631 7.29412e-06 1.52451 7.34276e-06C1.80199 7.39127e-06 2.07909 0.105664 2.29106 0.316921L15.2419 13.2316C15.4463 13.4349 15.561 13.7116 15.561 14C15.561 14.2883 15.446 14.5647 15.2419 14.7684Z">
+        </g>
+    </symbol>
+
+    <symbol id="zoom" viewBox="0 0 512 512">
+        <g>
+            <path d="M224.971,224.971a24,24,0,0,1-33.942,0L88,121.941V88h33.941l103.03,103.029A24,24,0,0,1,224.971,224.971ZM424,424V390.059L320.971,287.029a24,24,0,0,0-33.942,33.942L390.059,424ZM72,176V72H176a24,24,0,0,0,0-48H48A24,24,0,0,0,24,48V176a24,24,0,0,0,48,0ZM488,464V336a24,24,0,0,0-48,0V440H336a24,24,0,0,0,0,48H464A24,24,0,0,0,488,464Z">
+        </g>
+    </symbol>
+
+</svg>
+
+<!-- Шапка -->
+<header class="header">
+    <div class="header__intro" style="background-image: url(images/bg-1.jpg);">
+        <div class="header__sign">
+            <div class="header__container">
+                <div class="social">
+
+                    <a class="social-link header__social-link__settings" target="_blank" href="#">
+                        <svg class="social-link__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social-link header__social-link__settings" target="_blank" href="#">
+                        <svg class="social-link__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social-link header__social-link__settings" target="_blank" href="#">
+                        <svg class="social-link__icon">
+                            <use xlink:href="#pinterest"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social-link header__social-link__settings" target="_blank" href="#">
+                        <svg class="social-link__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+             
+                </div>
+
+                <div class="header__search">
+                    <p class="search__text">Подпишитесь на рассылку</p>
+                    <form class="header__form">
+                        <input class="header__form-input" type="email" placeholder="Your Email">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header__nav">
+
+            <div class="header__logo">
+
+                <a class="logo__home" href="index.html">
+                    <img class="logo__icon" src="images/logo.svg" alt="logo">
+                    <h1 class="logo__title">HORSE</h1>
+                </a>
+                
+            </div>
+
+            <div class="header__burger" id="navToggle">
+                <span class="header__burger-link"></span>
+            </div>
+
+            <nav class="header__menu" id="nav">
+                <ul class="header__list">
+
+                    <li class="header__item">
+                        <a class="header__item-link" href="#" data-scroll="#home">ГЛАВНАЯ</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a class="header__item-link" href="#" data-scroll="#club">О КЛУБЕ</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a class="header__item-link" href="#" data-scroll="#service">СЕРВИСЫ</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a class="header__item-link" href="#" data-scroll="#price">ЦЕНЫ</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a class="header__item-link" href="#" data-scroll="#aboutus">О НАС</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a class="header__item-link" href="#" data-scroll="#contacts">КОНТАКТЫ</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+
+
+        </div>
+
+        <div class="header__content">
+            <h2 class="header__content-title">КОННЫЙ КЛУБ HORSE</h2>
+        </div>
+    </div>
+</header>
+
+<!-- Контент -->
+<section class="content">
+    <h3 class="content__title">ЛУЧШИЕ УСЛУГИ ПО ВСЕМУ МИРУ</h3>
+</section>
+
+<!-- Добро пожаловать -->
+<section class="welcom" id="club">
+    
+    <h3 class="title">ДОБРО ПОЖАЛОВАТЬ</h3>
+
+    <div class="welcom__container">
+        <div class="welcom__content">
+            <p class="welcom__text">Конный Клуб HORSE занимается обучением верховой езде. 
+                Профессиональные инструктора научат Вас и Ваших детей 
+                сидеть в седле и управлять лошадью, при желании — 
+                основам выездки и конкура.
+            </p>
+
+            <p class="welcom__text welcom__gold">Конный Клуб HORSE занимается обучением верховой езде. 
+                Профессиональные инструктора научат Вас и Ваших детей 
+                сидеть в седле и управлять лошадью, при желании — 
+                основам выездки и конкура.
+            </p>
+
+            <button class="welcom__btn">Читать далее</button>
+
+            <h4 class="welcom__program">У нас есть <span class="welcom__program-title">ПРОГРАММЫ ВЕРХОВОЙ ЕЗДЫ</span> для всех возрастов.</h4>
+        </div>
+
+        <img class="welcom__photo lazyload" data-src="images/welcom.png" alt="welcom">
+    </div>
+
+</section>
+
+<!-- Членство в клубе -->
+<section class="membershipe" style="background-image: url(images/membership.jpg);">
+    <div class="membershipe__club">
+
+        <div class="membershipe__content">
+            <h3 class="membershipe__title">ЧЛЕНСТВО В КЛУБЕ</h3>
+            <p class="membershipe__text">
+            Членом или другом клуба может стать любой человек, желающий добиться определенного прогресса в верховой езде и общении с лошадьми
+            </p>
+            <button class="button">Читать далее</button>
+        </div>
+        
+    </div>
+
+    <div class="membershipe__newsletter">
+        <div class="membershipe__content">
+
+            <div class="membershipe__logo">
+                <a class="logo__home membership-logo__home" href="index.html">
+                    <img class="logo__icon" src="images/logo.svg" alt="logo">
+                    <h1 class="logo__title">HORSE</h1>
+                </a>
+
+                <h3 class="newletter__title">РАССЫЛКА</h3>
+                <p class="newletter__text">Зарегистрируйтесь, если вы хотите получать новости!</p>
+            </div>
+
+            <form class="newletter__form">
+                <input class="newletter__form-input" type="text" placeholder="Ваш email адрес">
+                <button class="button">Подписаться</button>
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Сервис -->
+<section class="service" id="service">
+    <h3 class="title">СЕРВИС КОННОГО КЛУБА</h3>
+
+    <p class="service__text">
+        Мы предлагаем уроки верховой езды, услуги кузнеца и консультации, а также 
+терапевтические уроки верховой езды. Мы проводим специальные мероприятия 
+во время школьных каникул - пожалуйста, посетите нашу страницу событий 
+для праздничных мероприятий.
+    </p>
+
+    <div class="service__photo">
+        <div class="service__photo-content">
+            <img class="service__photo-img lazyload" data-src="images/service-1.png" alt="service-1">
+        </div>
+
+        <div class="service__photo-content">
+            <img class="service__photo-img lazyload" data-src="images/service-2.png" alt="service-2">
+        </div>
+
+        <div class="service__photo-content">
+            <img class="service__photo-img lazyload" data-src="images/service-3.png" alt="service-3">
+        </div>
+    </div>
+</section>
+
+<!-- Прайс -->
+<section class="price" id="price" style="background-image: url(images/price-photo.png);">
+    <div class="price__container">
+
+        <div class="price__content">
+            <div class="title">
+                <a class="logo__home" href="index.html">
+                    <img class="logo__icon" src="images/logo.svg" alt="logo">
+                    <h1 class="logo__title">HORSE</h1>
+                </a>
+            </div>
+
+            <p class="price__title">
+                Мы предлагаем вам ознакомиться c перечнем услуг и прайс листом конного клуба
+            </p>
+
+            <div class="price__inner">
+                <div class="price__item">
+
+                    <div class="price__content-name__count">
+                        <h4 class="price__name">Базовый</h4>
+                        <p class="price__count">30$</p>
+                    </div>
+
+                    <div class="price__content-text-btn">
+                        <p class="price__text">Начальное обучение, сдача теста для перехода на след.уровень.</p>
+                        <button class="button price__button">Бронироваать</button>
+                    </div>
+
+                </div>
+
+                <div class="price__item">
+
+                    <div class="price__content-name__count">
+                        <h4 class="price__name">Средний</h4>
+                        <p class="price__count">60$</p>
+                    </div>
+
+                    <div class="price__content-text-btn">
+                        <p class="price__text">Основы верховой езды, самостоятельная езда, езда по одиночным жердям, 
+                            сдача теста для перехода на след. уровень.</p>
+                        <button class="button price__button">Бронироваать</button>
+                    </div>
+
+                </div>
+
+                <div class="price__item">
+
+                    <div class="price__content-name__count">
+                        <h4 class="price__name">Расширенный</h4>
+                        <p class="price__count">90$</p>
+                    </div>
+
+                    <div class="price__content-text-btn">
+                        <p class="price__text">Начальная спортивная подготовка, элементы манежной езды, езда по 
+                            жердям.</p>
+                        <button class="button price__button">Бронироваать</button>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Последние новости --> 
+<section class="news">
+    <h3 class="title">ПОСЛЕДНИЕ НОВОСТИ</h3>
+    <P class="news__suptitle">Из нашего блога</P>
+
+    <div class="news__container">
+
+        <div class="news__photo">
+            <img class="news__img" src="images/latest.png" alt="latest">
+        </div>
+        
+        <div class="news__inner">
+
+            <div class="news__item">
+                <div class="news__item-date__month">
+                    <span class="news__item-date">24</span>
+                    <span class="news__item-month">Апр</span>
+                </div>
+
+                <div class="news__item-title__text">
+                    <h4 class="news__item-title">1 этап Кубка Санкт-Петербурга по выездке</h4>
+                    <p class="news__item-text">15 марта у нас пройдут региональные соревнования по выездке</p>
+                    <a class="news__item-link" href="#">Смотреть больше</a>
+                </div>
+            </div>
+
+            <div class="news__item">
+                <div class="news__item-date__month">
+                    <span class="news__item-date">19</span>
+                    <span class="news__item-month">Апр</span>
+                </div>
+
+                <div class="news__item-title__text">
+                    <h4 class="news__item-title">Экскурсии для детей с прогулкой на лошадях!</h4>
+                    <p class="news__item-text">Стоит поднять настроение прогулками в лесу, катанием на санях или тренировками в теплом манеже?</p>
+                    <a class="news__item-link" href="#">Смотреть больше</a>
+                </div>
+            </div>
+
+            <div class="news__item">
+                <div class="news__item-date__month">
+                    <span class="news__item-date">8</span>
+                    <span class="news__item-month">Апр</span>
+                </div>
+
+                <div class="news__item-title__text">
+                    <h4 class="news__item-title">Всадники возвращают свои призовые</h4>
+                    <p class="news__item-text">Несколько выездковых всадников вернули свои призовые организатором с целью поддержки турнира</p>
+                    <a class="news__item-link" href="#">Смотреть больше</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Отзывы --> 
+<section class="reviews" id="aboutus">
+
+    <div class="content">
+        <h3 class="content__title">ЧТО НАШИ ПОСЕТИТЕЛИ ГОВОРЯТ О НАС</h3>
+    </div>
+    
+    
+    <div class="reviews__content">
+
+        <div class="reviews__item">
+            <img class="reviews__img" src="images/reviews.png" alt="reviews">
+            <p class="reviews__text">“Огромное удовольствие от общения с прекрасными благородными животными.”</p>
+            <p class="reviews__name">Моника Вилсон</p>
+        </div>
+
+        <div class="reviews__item">
+            <img class="reviews__img" src="images/reviews.png" alt="reviews">
+            <p class="reviews__text">“Огромное удовольствие от общения с прекрасными благородными животными.”</p>
+            <p class="reviews__name">Вероника Вилсон</p>
+        </div>
+
+        <div class="reviews__item">
+            <img class="reviews__img" src="images/reviews.png" alt="reviews">
+            <p class="reviews__text">“Огромное удовольствие от общения с прекрасными благородными животными.”</p>
+            <p class="reviews__name">Моника Вилсон</p>
+        </div>
+
+    </div>
+
+
+    <div class="reviews__photos">
+        <a class="reviews__photos-link" href="images/gallery-1.png" data-fancybox="images">
+            <img class="reviews__photos-img" src="images/gallery-1.png" alt="gallery-1">
+            <div class="overlay">
+                <svg class="reviews__overlay-icon">
+                    <use xlink:href="#zoom"></use>
+                </svg>
+            </div>
+        </a>
+    
+        <a class="reviews__photos-link" href="images/gallery-2.png" data-fancybox="images">
+            <img class="reviews__photos-img" src="images/gallery-2.png" alt="gallery-2">
+            <div class="overlay">
+                <svg class="reviews__overlay-icon">
+                    <use xlink:href="#zoom"></use>
+                </svg>
+            </div>
+        </a>	
+    
+        <a class="reviews__photos-link" href="images/gallery-3.png" data-fancybox="images">
+            <img class="reviews__photos-img" src="images/gallery-3.png" alt="gallery-3">
+            <div class="overlay">
+                <svg class="reviews__overlay-icon">
+                    <use xlink:href="#zoom"></use>
+                </svg>
+            </div>
+        </a>
+    
+        <a class="reviews__photos-link" href="images/gallery-4.png" data-fancybox="images">
+            <img class="reviews__photos-img" src="images/gallery-4.png" alt="gallery-4">
+            <div class="overlay">
+                <svg class="reviews__overlay-icon">
+                    <use xlink:href="#zoom"></use>
+                </svg>
+            </div>
+        </a>
+
+        <a class="reviews__photos-link" href="images/gallery-5.png" data-fancybox="images">
+            <img class="reviews__photos-img" src="images/gallery-5.png" alt="gallery-4">
+            <div class="overlay">
+                <svg class="reviews__overlay-icon">
+                    <use xlink:href="#zoom"></use>
+                </svg>
+            </div>
+        </a>	
+    
+    </div>
+
+</section>
+
+<!-- Карта --> 
+<div class="location" id="contacts">
+
+    <div class="content">
+        <h3 class="content__title">ГДЕ ВЫ МОЖЕТЕ НАС НАЙТИ</h3>
+    </div>
+
+    <div class="#map">
+        <iframe class="location-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15985.06466622828!2d30.38178505!3d59.94652625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1588628858839!5m2!1sru!2sru" width="100%" height="322" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+
+<!-- Подвал --> 
+<footer class="footer">
+    <div class="footer__container">
+
+        <a class="logo__home" href="index.html">
+            <img class="logo__icon" src="images/logo.svg" alt="logo">
+            <h1 class="logo__title">HORSE</h1>
+        </a>
+
+        <div class="menu">
+            <div class="menu__item">
+                <a class="menu__item-link" href="#">Главная</a>
+                <a class="menu__item-link" href="#">О клубе</a>
+                <a class="menu__item-link" href="#">Сервисы</a>
+                <a class="menu__item-link" href="#">Цены</a>
+                <a class="menu__item-link" href="#">О нас</a>
+                <a class="menu__item-link" href="#">Контакты</a>
+            </div>
+        </div>
+
+        <div class="footer__social">
+            <h4 class="footer__social-title">Подпишитесь на нас в:</h4>
+            <div class="social">
+
+                <a class="social-link footer__social-link__settings" target="_blank" href="#">
+                    <svg class="social-link__icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+
+                <a class="social-link footer__social-link__settings" target="_blank" href="#">
+                    <svg class="social-link__icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+
+                <a class="social-link footer__social-link__settings" target="_blank" href="#">
+                    <svg class="social-link__icon">
+                        <use xlink:href="#pinterest"></use>
+                    </svg>
+                </a>
+
+                <a class="social-link footer__social-link__settings" target="_blank" href="#">
+                    <svg class="social-link__icon">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+         
+            </div>
+        </div>
+
+        <div class="footer__mailing">
+            <h4 class="footer__mailing-title">Подпишитесь на нашу рассылку</h4>
+            <form class="footer__form">
+                <input class="footer__form-input" type="email" for="email" placeholder="your@emailcom">
+                <button class="footer__form-button" type="submit">Отправить</button>
+            </form>
+        </div>
+
+    </div>
+    <h5 class="footer__copy">© 2020 Все права защищены.</h5>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+<script src="js/libs/slick.min.js"></script>
+<script src="js/libs/lazysizes.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
