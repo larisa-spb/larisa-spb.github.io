@@ -1,0 +1,131 @@
+.hero {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 70px 147px 131px rgba(158,125,117,.9) inset;
+    padding-top: 100px;
+}
+
+.hero-container {
+    display: flex;
+    margin-top: 200px;
+}
+
+.hero-content {
+    width: 413px;
+    background-color: rgba(#513830, 0.9);
+    padding: 40px 27px 27px;
+    border-top: 4px solid #fff;
+
+    &__title {
+        color: #fff;
+        font-size: 22px;
+        font-family: 'PTSerifRegular';
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: #f0ead8;
+        font-size: 15px;
+        font-family: 'PTSansRegular';
+        margin-bottom: 24px;
+    }
+}
+
+.hero-form {
+
+    &__input {
+        width: 238px;
+        font-size: 16px;
+        color: #eae5d1;
+        background-color: #fff;
+        font-family: 'PTSansRegular';
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: none;
+        padding: 4px 9px;
+        transition: all .3s;
+
+        &::placeholder {
+            font-size: 16px;
+            color: #604a43;
+            font-family: 'PTSansRegular';
+            opacity: 1;
+        }
+
+        &:focus {
+            background: rgba(63,42,35,.5);
+            color: #eae5d1;
+            opacity: 1;
+        }
+
+        &:focus::placeholder {
+            color: #eae5d1;
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        position: relative;
+        border: none;
+        margin: -5px;
+        background-color: #f66742;
+        font-size: 16px;
+        font-family: 'PTSansRegular';
+        padding: 5px 7px 5px 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover,
+        &:active {
+            background-color: #ff7754;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            border: 15.5px solid transparent;
+            border-left: 5px solid #f66742;
+            display: block;
+            top: 0;
+            left: 78px;
+            transition: all .3s;
+        }
+
+        &:hover::after {
+            content: '';
+            position: absolute;
+            border: 15.5px solid transparent;
+            border-left: 5px solid #ff7754;
+            display: block;
+            top: 0;
+            left: 78px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 425px;
+    }
+
+    .hero-container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .hero-content {
+        padding: 15px 15px 15px;
+
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+    .hero-form__input {
+        width: 190px;
+    }
+}
