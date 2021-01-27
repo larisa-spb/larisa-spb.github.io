@@ -353,6 +353,10 @@ body {
     font-weight: 700;
 }
 
+.reviews-small__name {
+    font-weight: 700;
+}
+
 .reviews-small__box-1 {
     padding-left: 84px;
 }
