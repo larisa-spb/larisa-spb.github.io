@@ -419,9 +419,6 @@ body {
         height: 160px;
     }
 
-    .header-btn {
-        display: block;
-    }
 
     .logo {
         position: absolute;
@@ -483,6 +480,13 @@ body {
         padding: 4px 20px;
         border-radius: 8px;
         cursor: pointer;
+        -webkit-transition: background-color .2s linear;        
+             -o-transition: background-color .2s linear;        
+                transition: background-color .2s linear;
+    }
+
+    .header-btn:hover {
+        background-color: #06884BC5;
     }
 
     .header-nav__link--active {
