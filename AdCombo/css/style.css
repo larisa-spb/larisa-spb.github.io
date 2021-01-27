@@ -200,6 +200,9 @@ body {
 .accordion-header__title {
     font-weight: 700;
 }
+.ui-accordion-content {
+    background-color: #F8FBFF;
+}
 
 .accordion-header__title,
 .ui-accordion-content__text {
@@ -364,7 +367,7 @@ body {
 .reviews-small__box-1,
 .reviews-small__box-2 {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .reviews-small__photo-1,
