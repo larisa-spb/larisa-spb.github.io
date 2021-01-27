@@ -197,9 +197,11 @@ body {
     outline: none;
     border: none !important;  
 }
+
 .accordion-header__title {
     font-weight: 700;
 }
+
 .ui-accordion-content {
     background-color: #F8FBFF !important;
 }
@@ -530,6 +532,11 @@ body {
         top: 50%;
         width: 500px;
         height: 300px;
+    }
+
+    .intro-container__title {
+        text-transform: uppercase;
+        font-size: 2.2em;
     }
 
     .intro-container__title::before {
