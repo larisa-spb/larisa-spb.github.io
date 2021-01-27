@@ -747,6 +747,12 @@ body {
 
 @media (min-width: 1600px) {
 
+    /* Main picture with slider
+    ========================= */
+    .intro-container__title {
+        font-size: 2.45em;
+    }
+
     /* Reviews and accordion
     ========================= */
     .info, 
