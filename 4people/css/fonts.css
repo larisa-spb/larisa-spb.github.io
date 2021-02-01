@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'LatoBold';
+    src: local('Lato'), local('Lato Bold'), local('Lato-Bold'),
+        url('./../fonts/Lato/Lato-Bold.woff2') format('woff2'),
+        url('./../fonts/Lato/Lato-Bold.woff') format('woff'),
+        url('./../fonts/Lato/Lato-Bold.ttf') format('ttf'),
+        url('./../fonts/Lato/Lato-Bold.eot') format('eot');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LatoHeavy';
+    src: local('Lato Heavy'), local('Lato-Heavy'),
+        url('./../fonts/Lato/Lato-Heavy.woff2') format('woff2'),
+        url('./../fonts/Lato/Lato-Heavy.woff') format('woff'),
+        url('./../fonts/Lato/Lato-Heavy.ttf') format('ttf'),
+        url('./../fonts/Lato/Lato-Heavy.eot') format('eot');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: local('Lato'), local('Lato Regular'), local('Lato-Regular'),
+        url('./../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('./../fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('./../fonts/Lato/Lato-Regular.ttf') format('ttf'),
+        url('./../fonts/Lato/Lato-Regular.eot') format('eot');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'LatoSemibold';
+    src: local('Lato-Semibold'), local('Lato Semibold'),
+        url('./../fonts/Lato/Lato-Semibold.woff2') format('woff2'),
+        url('./../fonts/Lato/Lato-Semibold.woff') format('woff'),
+        url('./../fonts/Lato/Lato-Semibold.ttf') format('ttf'),
+        url('./../fonts/Lato/Lato-Semibold.eot') format('eot');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'RalewayExtraBold';
+    src: local('Raleway'), local('Raleway-ExtraBold'), local('Raleway ExtraBold'),
+        url('./../fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('./../fonts/Raleway/Raleway-ExtraBold.woff') format('woff'),
+        url('./../fonts/Raleway/Raleway-ExtraBold.ttf') format('ttf'),
+        url('./../fonts/Raleway/Raleway-ExtraBold.eot') format('eot');
+    font-style: normal;
+    font-weight: 800;
+}
